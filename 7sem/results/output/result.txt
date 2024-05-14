@@ -1,0 +1,48 @@
+phrase:      IFYOUNEEDTOHEARWHYILOVEYOU,ICANGOONALLNIGHT
+detected:    IFYOUNEEDTOHEARWHYILOVEYOUIICANGOONALLNIGHT
+correct:     98%
+
+has | got | correct
+I	I	True
+F	F	True
+Y	Y	True
+O	O	True
+U	U	True
+N	N	True
+E	E	True
+E	E	True
+D	D	True
+T	T	True
+O	O	True
+H	H	True
+E	E	True
+A	A	True
+R	R	True
+W	W	True
+H	H	True
+Y	Y	True
+I	I	True
+L	L	True
+O	O	True
+V	V	True
+E	E	True
+Y	Y	True
+O	O	True
+U	U	True
+,	I	False
+I	I	True
+C	C	True
+A	A	True
+N	N	True
+G	G	True
+O	O	True
+O	O	True
+N	N	True
+A	A	True
+L	L	True
+L	L	True
+N	N	True
+I	I	True
+G	G	True
+H	H	True
+T	T	True
