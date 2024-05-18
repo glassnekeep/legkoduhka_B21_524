@@ -2,7 +2,6 @@ import numpy as np
 from PIL import Image as pim
 from glob import glob
 import os
-from statistics import mean
 
 
 def small_square(x, y, arr):
@@ -14,7 +13,6 @@ def small_square(x, y, arr):
 
 def big_square(x, y, arr):
     mat, disp = small_square(x - 1, y + 1, arr)
-
     tmat, tdisp = small_square(x, y + 1, arr)
     if tdisp < disp:
         disp = tdisp
@@ -27,7 +25,6 @@ def big_square(x, y, arr):
 
     tmat, tdisp = small_square(x, y, arr)
     if tdisp < disp:
-        disp = tdisp
         mat = tmat
 
     return mat

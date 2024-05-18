@@ -47,3 +47,15 @@ def safe_number_input(number_type: type, lower_bound=None, upper_bound=None):
         except ValueError:
             print("Введите корректное значение")
     return user_input
+
+
+def toPolutoneSRGB(imgname):
+    input_image = Image.open(imgname).convert('RGB')
+    origPicArr = np.array(input_image)
+    newPicArr = np.zeros((origPicArr.shape[0], origPicArr.shape[1]), dtype=origPicArr.dtype)
+
+    for y in range(origPicArr.shape[0]):
+        for x in range(origPicArr.shape[1]):
+            newPicArr[y][x] = np.mean(origPicArr[y][x])
+
+    return Image.fromarray(newPicArr, mode='L')
